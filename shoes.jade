@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Bridal
+    <!-- Place somewhere in the <head> of your document -->
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel='stylesheet', href='http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css')
+    link(rel="stylesheet" href="assets/css/main.css")
+    link(rel="stylesheet" href="assets/css/nice-select.css")
+      
+
+
+  body
+    .home-wrap
+      include jadefiles/header-2.jade
+      
+      .home-sections
+        .container
+          include jadefiles/showcase-shoes.jade
+          .row
+            .col-md-3
+              include jadefiles/sidebar-search-shoes.jade
+              include jadefiles/sidebar-nav-shoes.jade
+              include jadefiles/sidebar-top-sale.jade
+            .col-md-9
+              include jadefiles/contain-selection-shoes.jade
+              include jadefiles/main-products-shoes.jade
+              include jadefiles/pagination.jade
+            
+            
+        include jadefiles/footer-shoes.jade
+          
+            
+            
+        
+          
+    //- div(style="height: 1000px")  
+      
+    
+    script(src="assets/js/jquery-3.1.1.min.js")
+    script(src="assets/js/bootstrap.min.js")
+    script(src='assets/js/smooth-scroll.js')
+    script(src='assets/js/jquery.easing.1.3.js')
+    script(src='assets/js/jquery.parallax-scroll.js')
+    script(src="assets/js/functions.js")
+    script(src="assets/js/jquery.nice-select.js")
+    script(src="assets/js/wow.min.js")
+      
+      
+  

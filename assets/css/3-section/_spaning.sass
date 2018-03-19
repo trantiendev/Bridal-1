@@ -1,0 +1,49 @@
+section.spaning
+  .deco
+    position: fixed
+    right: 0px
+    top: 45%
+
+
+    span,
+    .span1,
+    .span2,
+    .span3,
+    .span4
+      display: block
+      width: 100px
+      height: 1px
+      background: #cfcccc
+      margin-bottom: 20px
+      transform: translateX(40px)
+      transition: all .2s linear
+      position: relative
+      cursor: pointer
+
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 100px
+        height: 10px
+        background: transparent
+
+      &.is-spaning
+        background: #b2984a
+        transform: translateX(0px)
+
+  .social
+    position: fixed
+    bottom: 20px
+    left: 40px
+
+    i
+      color: #bcbcbc
+      font-size:  1.7em
+      margin-right: 10px
+      transition: all .3s linear
+      cursor: pointer
+      &:hover
+        color: #b2984a
+      &.color
+        color: #666

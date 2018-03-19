@@ -1,0 +1,48 @@
+section.promotion-contain.container
+  margin-top: 50px
+
+  .promotion-contain
+    margin-bottom: 20px
+
+    .promotion-contain-img
+      img
+        width: 100%
+        height: auto
+
+    .promotion-contain-detail
+      padding: 80px 20px 80px 20px
+      .day
+        color: $yellow
+        font-weight: 600
+      h3
+        position: relative
+        font-weight: 600
+        margin-bottom: 30px
+
+        &:after
+          content: ''
+          display: block
+          background: $yellow
+          width: 150px
+          height: 1px
+          position: absolute
+          left: -35%
+          top: 10px
+      button
+        background: $yellow
+        border-radius: 0
+        color: #fff
+        padding: 10px 30px
+        margin-top: 30px
+
+
+
+
+  .promotion-contain-2
+    .promotion-contain-detail
+      text-align: right
+      h3
+        &:after
+          position: absolute
+          z-index: 1
+          left: 103% !important

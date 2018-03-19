@@ -1,0 +1,40 @@
+section.sidebar-nav-shoes
+  h3
+    text-transform: uppercase
+    font-weight: 600
+    padding: 10px 0px 30px
+
+  ul
+    padding: 0
+    li
+      list-style: none
+      padding-bottom: 20px
+      display: list-item
+
+      a
+        color: #a2a2a2
+        text-decoration: none
+        transition: all .3s ease 0.1s
+        position: relative
+        display: block
+
+
+        &:hover
+          color: $yellow
+          padding-left: 20px
+
+        &:hover::before
+          opacity: 1
+
+
+        &::before
+          content: ''
+          width: 50px
+          height: 1px
+          background: $yellow
+          position: absolute
+          top: 50%
+          display: block
+          left: -39px
+          opacity: 0
+          transition-delay: .2s

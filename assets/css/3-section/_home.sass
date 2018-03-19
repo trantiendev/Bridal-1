@@ -1,0 +1,101 @@
+
+$yellow: #b2984a
+
+h1, h2, h3, h4
+  margin: 0
+
+.deco-home
+  width: 200px
+  height: 1px
+  background: #b2984a
+.text-home
+  width: 480px
+  margin: 100px 0px 0px 30px
+  h4
+    color: #b2984a
+    font-weight: 600
+    margin-bottom: 10px
+  h1
+    color: #fff
+    margin-bottom: 20px
+    font-weight: 600
+    font-size: 3em
+
+  p
+    color: #bcbcbc
+    margin-bottom: 40px
+    font-weight: 600
+
+a.button
+  padding: 0
+  margin: 0
+  background: transparent
+  font-weight: bold
+  border: none
+  width: 120px
+  height: 40px
+  text-align: center
+  line-height: 40px
+  position: relative
+  z-index: 1
+  transition: all .3s ease
+  color: #fff
+  text-decoration: none
+  display: block
+  cursor: pointer
+
+
+
+  &:hover
+    color: $yellow
+
+  &:hover::after
+    transform: scale(1)
+    opacity: 1
+
+  &:hover:before
+    transform: scale(0)
+
+  &:before
+    content: ''
+    position: absolute
+    width: inherit
+    height: inherit
+    background: #b2984a
+    top: 0
+    left: 0
+    z-index: -1
+    transition: .2s linear
+    transform-origin: center
+
+
+  &:after
+    content: ''
+    position: absolute
+    width: inherit
+    height: inherit
+    background: transparent
+    top: 0
+    left: 0
+    transform: scale(1.4)
+    border: 1px solid #b2984a
+    opacity: 0
+    transition: .3s ease
+
+body::-webkit-scrollbar
+    width: 10px
+
+
+::-webkit-scrollbar-track
+    border-radius: 10px
+    background: #ccc
+
+
+::-webkit-scrollbar-thumb
+    border-radius: 10px
+    // background: #a4a1a1
+    background: #b89c4b
+    opacity: 0.6
+
+::-webkit-scrollbar-thumb:window-inactive
+    background: rgba(100,100,100,0.4)
