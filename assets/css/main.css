@@ -6075,14 +6075,13 @@ section.home-footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  section.home-footer .text-home p {
-    color: #fff;
-    font-weight: 500; }
-  section.home-footer .img-home-footer {
-    margin: 50px 0px 0px 70px; }
-    section.home-footer .img-home-footer img {
-      width: 549px;
-      height: 488px; }
+  section.home-footer .text-home {
+    margin: 100px 0px 0px 0px; }
+    section.home-footer .text-home p {
+      color: #fff;
+      font-weight: 500; }
+  section.home-footer .img-home-footer img {
+    width: 100%; }
 
 section.spaning .deco {
   position: fixed;
@@ -6319,6 +6318,9 @@ footer.footer-shoes {
       color: #b2984a; }
   footer.footer-shoes .copy-right p {
     color: #ccc; }
+  @media (max-width: 760px) {
+    footer.footer-shoes .copy-right p {
+      text-align: left; } }
 
 section.showcase-wdress {
   margin: 50px 0px; }
@@ -6483,25 +6485,27 @@ section.contact-messages {
   section.spaning .deco {
     display: none; } }
 
+@media (max-width: 992px) {
+  section.promotion-contain.container .promotion-contain .promotion-contain-detail {
+    padding: 40px 20px 40px 20px; }
+    section.promotion-contain.container .promotion-contain .promotion-contain-detail h3:after {
+      display: none; } }
+
+@media (max-width: 990px) {
+  section.home-footer .deco-home {
+    display: none; } }
+
 @media (max-width: 640px) {
   section.home-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     padding: 30px 0px;
     height: auto; }
     section.home-footer .text-home {
       width: 90%;
       margin: 0 auto; }
-    section.home-footer .img-home-footer {
-      width: 90%;
-      margin: 0 auto;
-      height: 370px; }
-      section.home-footer .img-home-footer img {
-        width: 100%;
-        height: 100%;
-        display: block; } }
+      section.home-footer .text-home p {
+        margin-bottom: 20px; }
+      section.home-footer .text-home h1 {
+        font-size: 2em; }
+    section.home-footer .img-home-footer img {
+      width: 100%;
+      height: auto; } }
