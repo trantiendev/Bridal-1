@@ -4,6 +4,9 @@ $(function(){
   fullPage();
 });
 
+function wowjs(){
+  new WOW().init();
+}
 
 
 function fullPage(){
@@ -107,6 +110,3 @@ function clickhref(){
       });
 }
 
-function wowjs(){
-  new WOW().init();
-}
