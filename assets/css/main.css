@@ -6,6 +6,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(1-tool/pe-icon-7-stroke/css/pe-icon-7-stroke.css);
+@import url(1-tool/animate.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
